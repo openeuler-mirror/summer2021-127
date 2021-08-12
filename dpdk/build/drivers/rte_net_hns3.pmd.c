@@ -1,0 +1,3 @@
+static __attribute__((unused)) const char *generator = "/home/cxx/dpdk/buildtools/gen-pmdinfo-cfile.sh";
+const char net_hns3_pmd_info[] __attribute__((used)) = "PMD_INFO_STRING= {\"name\" : \"net_hns3\", \"kmod\" : \"* igb_uio | vfio-pci\", \"pci_ids\" : [[6629, 41504, 65535, 65535],[6629, 41505, 65535, 65535],[6629, 41506, 65535, 65535],[6629, 41508, 65535, 65535],[6629, 41510, 65535, 65535],[6629, 41512, 65535, 65535] ]}";
+const char net_hns3_vf_pmd_info[] __attribute__((used)) = "PMD_INFO_STRING= {\"name\" : \"net_hns3_vf\", \"kmod\" : \"* igb_uio | vfio-pci\", \"pci_ids\" : [[6629, 41518, 65535, 65535],[6629, 41519, 65535, 65535] ]}";

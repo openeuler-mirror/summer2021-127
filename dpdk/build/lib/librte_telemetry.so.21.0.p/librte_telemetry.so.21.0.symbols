@@ -1,0 +1,18 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_telemetry.so.21]
+EXPERIMENTAL A
+rte_tel_data_add_array_container T
+rte_tel_data_add_array_int T
+rte_tel_data_add_array_string T
+rte_tel_data_add_array_u64 T
+rte_tel_data_add_dict_container T
+rte_tel_data_add_dict_int T
+rte_tel_data_add_dict_string T
+rte_tel_data_add_dict_u64 T
+rte_tel_data_alloc T
+rte_tel_data_free T
+rte_tel_data_start_array T
+rte_tel_data_start_dict T
+rte_tel_data_string T
+rte_telemetry_init T
+rte_telemetry_legacy_register T
+rte_telemetry_register_cmd T

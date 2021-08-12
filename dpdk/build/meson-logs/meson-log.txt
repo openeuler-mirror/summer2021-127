@@ -1,0 +1,3830 @@
+Build started at 2021-08-02T19:47:44.603188
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.59.0
+Source dir: /home/cxx/dpdk
+Build dir: /home/cxx/dpdk/build
+Build type: native build
+Program cat found: YES (/bin/cat)
+Running command: /bin/cat /home/cxx/dpdk/VERSION
+--- stdout ---
+20.11.2
+
+--- stderr ---
+
+
+Project name: DPDK
+Project version: 20.11.2
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/cxx/dpdk/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: ccache cc (gcc 7.5.0 "cc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0")
+C linker for the host machine: cc ld.bfd 2.30
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/cxx/dpdk/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: ccache cc (gcc 7.5.0 "cc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0")
+C linker for the build machine: cc ld.bfd 2.30
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+[Errno 21] Is a directory: '/home/cxx/dpdk/buildtools/pkg-config'
+Unusable script '/home/cxx/dpdk/buildtools/pkg-config'
+Program pkg-config found: YES (/usr/bin/pkg-config)
+Program gen-pmdinfo-cfile.sh found: YES (/home/cxx/dpdk/buildtools/gen-pmdinfo-cfile.sh)
+Program check-symbols.sh found: YES (/home/cxx/dpdk/buildtools/check-symbols.sh)
+Program options-ibverbs-static.sh found: YES (/home/cxx/dpdk/buildtools/options-ibverbs-static.sh)
+Program binutils-avx512-check.sh found: YES (/home/cxx/dpdk/buildtools/binutils-avx512-check.sh)
+Program python3 found: YES (/usr/bin/python3)
+Program cat found: YES (/bin/cat)
+Running command: /bin/cat /home/cxx/dpdk/ABI_VERSION
+--- stdout ---
+21.0
+
+--- stderr ---
+
+
+Program ../buildtools/symlink-drivers-solibs.sh found: YES (/bin/sh /home/cxx/dpdk/config/../buildtools/symlink-drivers-solibs.sh)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpe_jlabjx
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpe_jlabjx/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpe_jlabjx/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Checking for size of "void *" : 8
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpm7i6lpei
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpm7i6lpei/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpm7i6lpei/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Checking for size of "void *" : 8
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpx3sl51v3
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpx3sl51v3/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpx3sl51v3/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpnno4v8zv
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpnno4v8zv/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpnno4v8zv/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lnuma -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library numa found: YES
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpqws1272s
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpqws1272s/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("numaif.h")
+          #error "Header 'numaif.h' could not be found"
+         #endif
+        #else
+         #include <numaif.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "numaif.h" : YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp6ane3r9b
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp6ane3r9b/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp6ane3r9b/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -llibfdt -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -llibfdt
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpbb1dfbya
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpbb1dfbya/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpbb1dfbya/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpfoltmq8o
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpfoltmq8o/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpfoltmq8o/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/7/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/7/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/7/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Library libfdt found: NO
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp8eftn3ni
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp8eftn3ni/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp8eftn3ni/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -llibexecinfo -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -llibexecinfo
+collect2: error: ld returned 1 exit status
+
+Library libexecinfo found: NO
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'libbsd' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libbsd` -> 1
+
+Run-time dependency libbsd found: NO (tried pkgconfig)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libpcap' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libpcap` -> 1
+
+Run-time dependency libpcap found: NO (tried pkgconfig)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp31byv004
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp31byv004/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp31byv004/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lpcap -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lpcap
+collect2: error: ld returned 1 exit status
+
+Library pcap found: NO
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpltrlsz_t
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpltrlsz_t/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpltrlsz_t/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wextra 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wextra: YES 
+config/meson.build:234: WARNING: Consider using the built-in warning_level option instead of using "-Wextra".
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpmiejeapq
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpmiejeapq/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpmiejeapq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wcast-qual 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wcast-qual: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp_vkyhl7n
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp_vkyhl7n/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp_vkyhl7n/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeprecated 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wdeprecated: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpz4f2in0l
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpz4f2in0l/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpz4f2in0l/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wformat: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp5maw9tjv
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp5maw9tjv/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp5maw9tjv/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-nonliteral 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpxekf0jlq
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpxekf0jlq/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpxekf0jlq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-security 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wformat-security: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp5i_wsew6
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp5i_wsew6/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp5i_wsew6/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpamy2d0ch
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpamy2d0ch/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpamy2d0ch/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmprk8lo3zu
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmprk8lo3zu/testfile.c -o /home/cxx/dpdk/build/meson-private/tmprk8lo3zu/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wnested-externs 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wnested-externs: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpmnq2pgba
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpmnq2pgba/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpmnq2pgba/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpq0s4m84z
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpq0s4m84z/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpq0s4m84z/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp9cbkhar9
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp9cbkhar9/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp9cbkhar9/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wsign-compare: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpzatgzfvy
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpzatgzfvy/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpzatgzfvy/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpjc253qzr
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpjc253qzr/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpjc253qzr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wundef 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wundef: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpegkwucez
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpegkwucez/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpegkwucez/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wwrite-strings 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpim8neazi
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpim8neazi/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpim8neazi/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Waddress-of-packed-member -Wno-address-of-packed-member 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-Waddress-of-packed-member'
+
+Compiler for C supports arguments -Wno-address-of-packed-member: NO 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpgan2va6t
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpgan2va6t/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpgan2va6t/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpacked-not-aligned -Wno-packed-not-aligned 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-Wpacked-not-aligned'
+
+Compiler for C supports arguments -Wno-packed-not-aligned: NO 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpq0lmbs09
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpq0lmbs09/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpq0lmbs09/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-field-initializers -Wno-missing-field-initializers 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Running command: /home/cxx/dpdk/buildtools/binutils-avx512-check.sh
+--- stdout ---
+
+--- stderr ---
+
+
+Running compile:
+Working directory:  /tmp/tmpyrvsv9bc
+Command line:  ccache cc /tmp/tmpyrvsv9bc/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __SSE4_2__
+        # define __SSE4_2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__SSE4_2__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__SSE4_2__" : 1 
+Running compile:
+Working directory:  /tmp/tmpwhgulp10
+Command line:  ccache cc /tmp/tmpwhgulp10/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AES__
+        # define __AES__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AES__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__AES__" : 1 
+Running compile:
+Working directory:  /tmp/tmpbcbbnds2
+Command line:  ccache cc /tmp/tmpbcbbnds2/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX__
+        # define __AVX__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX__" : 1 
+Running compile:
+Working directory:  /tmp/tmpcipf_8xt
+Command line:  ccache cc /tmp/tmpcipf_8xt/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 
+Running compile:
+Working directory:  /tmp/tmpdbgkxhc9
+Command line:  ccache cc /tmp/tmpdbgkxhc9/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512BW__
+        # define __AVX512BW__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512BW__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512BW__" :  
+Running compile:
+Working directory:  /tmp/tmp_o3_fubg
+Command line:  ccache cc /tmp/tmp_o3_fubg/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512CD__
+        # define __AVX512CD__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512CD__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512CD__" :  
+Running compile:
+Working directory:  /tmp/tmpuyzsyn7f
+Command line:  ccache cc /tmp/tmpuyzsyn7f/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512DQ__
+        # define __AVX512DQ__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512DQ__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512DQ__" :  
+Running compile:
+Working directory:  /tmp/tmpm58macgj
+Command line:  ccache cc /tmp/tmpm58macgj/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  
+Running compile:
+Working directory:  /tmp/tmp7etznpwp
+Command line:  ccache cc /tmp/tmp7etznpwp/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512VL__
+        # define __AVX512VL__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512VL__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512VL__" :  
+Running compile:
+Working directory:  /tmp/tmpdk_bol_o
+Command line:  ccache cc /tmp/tmpdk_bol_o/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __PCLMUL__
+        # define __PCLMUL__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__PCLMUL__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__PCLMUL__" : 1 
+Running compile:
+Working directory:  /tmp/tmpl9rb5dow
+Command line:  ccache cc /tmp/tmpl9rb5dow/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __RDRND__
+        # define __RDRND__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__RDRND__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__RDRND__" : 1 
+Running compile:
+Working directory:  /tmp/tmpan9ogk5f
+Command line:  ccache cc /tmp/tmpan9ogk5f/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __RDSEED__
+        # define __RDSEED__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__RDSEED__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__RDSEED__" : 1 
+Running compile:
+Working directory:  /tmp/tmpbb4repim
+Command line:  ccache cc /tmp/tmpbb4repim/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __VPCLMULQDQ__
+        # define __VPCLMULQDQ__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__VPCLMULQDQ__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__VPCLMULQDQ__" :  
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp40do6i0i
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp40do6i0i/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp40do6i0i/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-truncation -Wno-format-truncation 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-truncation: YES 
+Message: lib/librte_kvargs: Defining dependency "kvargs"
+Message: lib/librte_telemetry: Defining dependency "telemetry"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmppf2xv9d6
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmppf2xv9d6/testfile.c -o /home/cxx/dpdk/build/meson-private/tmppf2xv9d6/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <unistd.h>
+#include <limits.h>
+
+        #if defined __stub_getentropy || defined __stub___getentropy
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &getentropy;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getentropy" : YES 
+Message: lib/librte_eal: Defining dependency "eal"
+Message: lib/librte_ring: Defining dependency "ring"
+Message: lib/librte_rcu: Defining dependency "rcu"
+Message: lib/librte_mempool: Defining dependency "mempool"
+Message: lib/librte_mbuf: Defining dependency "mbuf"
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __PCLMUL__
+        # define __PCLMUL__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__PCLMUL__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__PCLMUL__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpk5zuls4s
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpk5zuls4s/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpk5zuls4s/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mpclmul 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mpclmul: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmptkgph3c3
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmptkgph3c3/testfile.c -o /home/cxx/dpdk/build/meson-private/tmptkgph3c3/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -maes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -maes: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpt68iyrz4
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpt68iyrz4/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpt68iyrz4/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512f 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpotfiba62
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpotfiba62/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpotfiba62/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512bw 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmppyfaxmwm
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmppyfaxmwm/testfile.c -o /home/cxx/dpdk/build/meson-private/tmppyfaxmwm/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512dq 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512dq: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpi_097dg4
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpi_097dg4/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpi_097dg4/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512vl 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512vl: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp530gqf8_
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp530gqf8_/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp530gqf8_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mvpclmulqdq 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-mvpclmulqdq'; did you mean '-mpclmul'?
+
+Compiler for C supports arguments -mvpclmulqdq: NO 
+Message: lib/librte_net: Defining dependency "net"
+Message: lib/librte_meter: Defining dependency "meter"
+Message: lib/librte_ethdev: Defining dependency "ethdev"
+Message: lib/librte_pci: Defining dependency "pci"
+Message: lib/librte_cmdline: Defining dependency "cmdline"
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'jansson' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion jansson` -> 1
+
+Run-time dependency jansson found: NO (tried pkgconfig)
+Message: lib/librte_metrics: Defining dependency "metrics"
+Message: lib/librte_hash: Defining dependency "hash"
+Message: lib/librte_timer: Defining dependency "timer"
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512VL__
+        # define __AVX512VL__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512VL__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512VL__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512CD__
+        # define __AVX512CD__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512CD__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512CD__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512BW__
+        # define __AVX512BW__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512BW__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512BW__" :  (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp_s94ctgx
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp_s94ctgx/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp_s94ctgx/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512f -mavx512vl -mavx512cd -mavx512bw 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f -mavx512vl -mavx512cd -mavx512bw: YES 
+Message: lib/librte_acl: Defining dependency "acl"
+Message: lib/librte_bbdev: Defining dependency "bbdev"
+Message: lib/librte_bitratestats: Defining dependency "bitratestats"
+Message: lib/librte_cfgfile: Defining dependency "cfgfile"
+Message: lib/librte_compressdev: Defining dependency "compressdev"
+Message: lib/librte_cryptodev: Defining dependency "cryptodev"
+Message: lib/librte_distributor: Defining dependency "distributor"
+Message: lib/librte_efd: Defining dependency "efd"
+Message: lib/librte_eventdev: Defining dependency "eventdev"
+Message: lib/librte_gro: Defining dependency "gro"
+Message: lib/librte_gso: Defining dependency "gso"
+Message: lib/librte_ip_frag: Defining dependency "ip_frag"
+Message: lib/librte_jobstats: Defining dependency "jobstats"
+Message: lib/librte_kni: Defining dependency "kni"
+Message: lib/librte_latencystats: Defining dependency "latencystats"
+Message: lib/librte_lpm: Defining dependency "lpm"
+Message: lib/librte_member: Defining dependency "member"
+Message: lib/librte_power: Defining dependency "power"
+Message: lib/librte_pdump: Defining dependency "pdump"
+Message: lib/librte_rawdev: Defining dependency "rawdev"
+Message: lib/librte_regexdev: Defining dependency "regexdev"
+Message: lib/librte_rib: Defining dependency "rib"
+Message: lib/librte_reorder: Defining dependency "reorder"
+Message: lib/librte_sched: Defining dependency "sched"
+Message: lib/librte_security: Defining dependency "security"
+Message: lib/librte_stack: Defining dependency "stack"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpxqavpf_o
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpxqavpf_o/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("linux/userfaultfd.h")
+          #error "Header 'linux/userfaultfd.h' could not be found"
+         #endif
+        #else
+         #include <linux/userfaultfd.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "linux/userfaultfd.h" : YES 
+Message: lib/librte_vhost: Defining dependency "vhost"
+Message: lib/librte_ipsec: Defining dependency "ipsec"
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512DQ__
+        # define __AVX512DQ__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512DQ__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512DQ__" :  (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpr4hvpti5
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpr4hvpti5/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpr4hvpti5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512f -mavx512dq 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f -mavx512dq: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES (cached)
+Message: lib/librte_fib: Defining dependency "fib"
+Message: lib/librte_port: Defining dependency "port"
+Message: lib/librte_table: Defining dependency "table"
+Message: lib/librte_pipeline: Defining dependency "pipeline"
+Message: lib/librte_flow_classify: Defining dependency "flow_classify"
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libelf' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libelf` -> 1
+
+Run-time dependency libelf found: NO (tried pkgconfig)
+Message: lib/librte_bpf: Defining dependency "bpf"
+Message: lib/librte_graph: Defining dependency "graph"
+Message: lib/librte_node: Defining dependency "node"
+Running command: /usr/bin/python3 /home/cxx/dpdk/buildtools/list-dir-globs.py 
+--- stdout ---
+.
+
+--- stderr ---
+
+
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-truncation: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/common/cpt: Defining dependency "common_cpt"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpsltqlrek
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpsltqlrek/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpsltqlrek/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wcast-qual -Wno-cast-qual 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-cast-qual: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp9gf56qk6
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp9gf56qk6/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp9gf56qk6/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith -Wno-pointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-arith: YES 
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/common/dpaax: Defining dependency "common_dpaax"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp8ybz2wer
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp8ybz2wer/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp8ybz2wer/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-to-int-cast -Wno-pointer-to-int-cast 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-to-int-cast: YES 
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/common/iavf: Defining dependency "common_iavf"
+Library libmusdk found: NO
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/common/octeontx: Defining dependency "common_octeontx"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/common/octeontx2: Defining dependency "common_octeontx2"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpdhd4fzj7
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpdhd4fzj7/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpdhd4fzj7/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdisabled-optimization 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wdisabled-optimization: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp3_g97o_n
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp3_g97o_n/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp3_g97o_n/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Waggregate-return 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Waggregate-return: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp2xshhs1u
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp2xshhs1u/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp2xshhs1u/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wbad-function-cast 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wbad-function-cast: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp88o0s18g
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp88o0s18g/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp88o0s18g/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare -Wno-sign-compare 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-sign-compare: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmppkz077d5
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmppkz077d5/testfile.c -o /home/cxx/dpdk/build/meson-private/tmppkz077d5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-parameter -Wno-unused-parameter 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmprigw4yv1
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmprigw4yv1/testfile.c -o /home/cxx/dpdk/build/meson-private/tmprigw4yv1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-variable -Wno-unused-variable 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp0l8ppyts
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp0l8ppyts/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp0l8ppyts/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wempty-body -Wno-empty-body 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-empty-body: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp0o9j7ct1
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp0o9j7ct1/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp0o9j7ct1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-but-set-variable -Wno-unused-but-set-variable 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES 
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/common/sfc_efx: Defining dependency "common_sfc_efx"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-cast-qual: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-arith: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/bus/dpaa: Defining dependency "bus_dpaa"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/bus/fslmc: Defining dependency "bus_fslmc"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/bus/ifpga: Defining dependency "bus_ifpga"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/bus/pci: Defining dependency "bus_pci"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/bus/vdev: Defining dependency "bus_vdev"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/bus/vmbus: Defining dependency "bus_vmbus"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpx38f5_q5
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpx38f5_q5/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpx38f5_q5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=c11 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpcmct98y0
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpcmct98y0/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpcmct98y0/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-prototypes -Wno-strict-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpc672r6ge
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpc672r6ge/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpc672r6ge/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -D_BSD_SOURCE 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpkkvhdrqg
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpkkvhdrqg/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpkkvhdrqg/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -D_DEFAULT_SOURCE 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpa9puef3_
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpa9puef3_/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpa9puef3_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -D_XOPEN_SOURCE=600 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES 
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libmlx5' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libmlx5` -> 1
+
+Run-time dependency libmlx5 found: NO (tried pkgconfig)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp5hlach_5
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp5hlach_5/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp5hlach_5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lmlx5 -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lmlx5
+collect2: error: ld returned 1 exit status
+
+Library mlx5 found: NO
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libcrypto' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libcrypto` -> 0
+1.1.1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags libcrypto` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libcrypto` -> 0
+-L/usr/lib/x86_64-linux-gnu -lcrypto
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libcrypto` -> 0
+-lcrypto
+Run-time dependency libcrypto found: YES 1.1.1
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/common/qat: Defining dependency "common_qat"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/mempool/bucket: Defining dependency "mempool_bucket"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/mempool/dpaa: Defining dependency "mempool_dpaa"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/mempool/dpaa2: Defining dependency "mempool_dpaa2"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/mempool/octeontx: Defining dependency "mempool_octeontx"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/mempool/octeontx2: Defining dependency "mempool_octeontx2"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/mempool/ring: Defining dependency "mempool_ring"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/mempool/stack: Defining dependency "mempool_stack"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/af_packet: Defining dependency "net_af_packet"
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libbpf' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libbpf` -> 1
+
+Run-time dependency libbpf found: NO (tried pkgconfig)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpu8qb6fhf
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpu8qb6fhf/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpu8qb6fhf/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lbpf -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lbpf
+collect2: error: ld returned 1 exit status
+
+Library bpf found: NO
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/ark: Defining dependency "net_ark"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/atlantic: Defining dependency "net_atlantic"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/avp: Defining dependency "net_avp"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/axgbe: Defining dependency "net_axgbe"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/bonding: Defining dependency "net_bond"
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'zlib' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion zlib` -> 0
+1.2.11
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags zlib` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs zlib` -> 0
+-L/usr/lib/x86_64-linux-gnu -lz
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs zlib` -> 0
+-lz
+Run-time dependency zlib found: YES 1.2.11
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/bnx2x: Defining dependency "net_bnx2x"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/bnxt: Defining dependency "net_bnxt"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/cxgbe: Defining dependency "net_cxgbe"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-arith: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/dpaa: Defining dependency "net_dpaa"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/dpaa2: Defining dependency "net_dpaa2"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpyqv5qx53
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpyqv5qx53/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpyqv5qx53/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wuninitialized -Wno-uninitialized 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-uninitialized: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpf1f67jhw
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpf1f67jhw/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpf1f67jhw/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmisleading-indentation -Wno-misleading-indentation 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-misleading-indentation: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpcelne1jh
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpcelne1jh/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpcelne1jh/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wimplicit-fallthrough -Wno-implicit-fallthrough 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-implicit-fallthrough: YES 
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/e1000: Defining dependency "net_e1000"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/ena: Defining dependency "net_ena"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/enetc: Defining dependency "net_enetc"
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/enic: Defining dependency "net_enic"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/failsafe: Defining dependency "net_failsafe"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpztvcv88a
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpztvcv88a/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpztvcv88a/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-value -Wno-unused-value 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpb0jp83ac
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpb0jp83ac/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpb0jp83ac/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-aliasing -Wno-strict-aliasing 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmphzhqbkgd
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmphzhqbkgd/testfile.c -o /home/cxx/dpdk/build/meson-private/tmphzhqbkgd/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-extra-args -Wno-format-extra-args 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-extra-args: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-implicit-fallthrough: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/fm10k: Defining dependency "net_fm10k"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-sign-compare: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpqwv8959l
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpqwv8959l/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpqwv8959l/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat -Wno-format 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmprk36sl6i
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmprk36sl6i/testfile.c -o /home/cxx/dpdk/build/meson-private/tmprk36sl6i/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-security -Wno-format-security 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-security: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpnqmdqkas
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpnqmdqkas/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpnqmdqkas/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-nonliteral -Wno-format-nonliteral 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-nonliteral: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/i40e: Defining dependency "net_i40e"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/hinic: Defining dependency "net_hinic"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/hns3: Defining dependency "net_hns3"
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpntny41pc
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpntny41pc/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpntny41pc/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -march=skylake-avx512 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -march=skylake-avx512: YES 
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/iavf: Defining dependency "net_iavf"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -march=skylake-avx512: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/ice: Defining dependency "net_ice"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/igc: Defining dependency "net_igc"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/ixgbe: Defining dependency "net_ixgbe"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/kni: Defining dependency "net_kni"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/liquidio: Defining dependency "net_liquidio"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/memif: Defining dependency "net_memif"
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libmlx4' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libmlx4` -> 1
+
+Run-time dependency libmlx4 found: NO (tried pkgconfig)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpabuyoexc
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpabuyoexc/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpabuyoexc/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lmlx4 -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lmlx4
+collect2: error: ld returned 1 exit status
+
+Library mlx4 found: NO
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Message: Disabling mlx5 [drivers/net/mlx5]: missing internal dependency "common_mlx5"
+Library libmusdk found: NO
+Library libmusdk found: NO
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/netvsc: Defining dependency "net_netvsc"
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'netcope-common' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion netcope-common` -> 1
+
+Run-time dependency netcope-common found: NO (tried pkgconfig)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/nfp: Defining dependency "net_nfp"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/null: Defining dependency "net_null"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/octeontx: Defining dependency "net_octeontx"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp5toiiehl
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp5toiiehl/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp5toiiehl/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -flax-vector-conversions 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -flax-vector-conversions: YES 
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/octeontx2: Defining dependency "net_octeontx2"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-arith: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/pfe: Defining dependency "net_pfe"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-sign-compare: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpj2h46ikl
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpj2h46ikl/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpj2h46ikl/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-prototypes -Wno-missing-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-prototypes: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-cast-qual: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp8j1izs6j
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp8j1izs6j/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp8j1izs6j/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-function -Wno-unused-function 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-function: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-nonliteral: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpl52v1d9o
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpl52v1d9o/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpl52v1d9o/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wshift-negative-value -Wno-shift-negative-value 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-shift-negative-value: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpzhg9fgde
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpzhg9fgde/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpzhg9fgde/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations -Wno-missing-declarations 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-declarations: YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpwet78_bl
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpwet78_bl/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpwet78_bl/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmaybe-uninitialized -Wno-maybe-uninitialized 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-maybe-uninitialized: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-shift-negative-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-implicit-fallthrough: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-extra-args: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpbgwk16k5
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpbgwk16k5/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpbgwk16k5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wvisibility -Wno-visibility 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-Wvisibility'
+
+Compiler for C supports arguments -Wno-visibility: NO 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-empty-body: YES (cached)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpfaqanam7
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpfaqanam7/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpfaqanam7/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Winvalid-source-encoding -Wno-invalid-source-encoding 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-Winvalid-source-encoding'; did you mean '-Winvalid-memory-model'?
+
+Compiler for C supports arguments -Wno-invalid-source-encoding: NO 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpbedje4xw
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpbedje4xw/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpbedje4xw/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsometimes-uninitialized -Wno-sometimes-uninitialized 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-Wsometimes-uninitialized'; did you mean '-Wmaybe-uninitialized'?
+
+Compiler for C supports arguments -Wno-sometimes-uninitialized: NO 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpscghg9rl
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpscghg9rl/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpscghg9rl/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-bool-conversion -Wno-pointer-bool-conversion 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-Wpointer-bool-conversion'; did you mean '-Wint-conversion'?
+
+Compiler for C supports arguments -Wno-pointer-bool-conversion: NO 
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-nonliteral: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/qede: Defining dependency "net_qede"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/ring: Defining dependency "net_ring"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wdisabled-optimization: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Waggregate-return: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wbad-function-cast: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/sfc: Defining dependency "net_sfc"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/softnic: Defining dependency "net_softnic"
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libsze2' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libsze2` -> 1
+
+Run-time dependency libsze2 found: NO (tried pkgconfig)
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpntp82hue
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpntp82hue/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpntp82hue/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/pkt_cls.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_FLOWER_UNSPEC
+                TCA_FLOWER_UNSPEC;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/pkt_cls.h> has symbol "TCA_FLOWER_UNSPEC" : YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmprlevroh6
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmprlevroh6/testfile.c -o /home/cxx/dpdk/build/meson-private/tmprlevroh6/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/pkt_cls.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_FLOWER_KEY_VLAN_PRIO
+                TCA_FLOWER_KEY_VLAN_PRIO;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/pkt_cls.h> has symbol "TCA_FLOWER_KEY_VLAN_PRIO" : YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpa3v3ud7d
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpa3v3ud7d/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpa3v3ud7d/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/pkt_cls.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_BPF_UNSPEC
+                TCA_BPF_UNSPEC;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/pkt_cls.h> has symbol "TCA_BPF_UNSPEC" : YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpki5us4jr
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpki5us4jr/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpki5us4jr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/pkt_cls.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_BPF_FD
+                TCA_BPF_FD;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/pkt_cls.h> has symbol "TCA_BPF_FD" : YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpr3zf264v
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpr3zf264v/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpr3zf264v/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/tc_act/tc_bpf.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_ACT_BPF_UNSPEC
+                TCA_ACT_BPF_UNSPEC;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/tc_act/tc_bpf.h> has symbol "TCA_ACT_BPF_UNSPEC" : YES 
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp09ebvqvx
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp09ebvqvx/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp09ebvqvx/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/tc_act/tc_bpf.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_ACT_BPF_FD
+                TCA_ACT_BPF_FD;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/tc_act/tc_bpf.h> has symbol "TCA_ACT_BPF_FD" : YES 
+Configuring tap_autoconf.h using configuration
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/tap: Defining dependency "net_tap"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp0u3ehx5t
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp0u3ehx5t/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp0u3ehx5t/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fno-prefetch-loop-arrays 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-prefetch-loop-arrays: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-maybe-uninitialized: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/thunderx: Defining dependency "net_thunderx"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/txgbe: Defining dependency "net_txgbe"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/vdev_netvsc: Defining dependency "net_vdev_netvsc"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/vhost: Defining dependency "net_vhost"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512vl: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/virtio: Defining dependency "net_virtio"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-extra-args: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/net/vmxnet3: Defining dependency "net_vmxnet3"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/raw/dpaa2_cmdif: Defining dependency "raw_dpaa2_cmdif"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/raw/dpaa2_qdma: Defining dependency "raw_dpaa2_qdma"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/raw/ioat: Defining dependency "raw_ioat"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/raw/ntb: Defining dependency "raw_ntb"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/raw/octeontx2_dma: Defining dependency "raw_octeontx2_dma"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/raw/octeontx2_ep: Defining dependency "raw_octeontx2_ep"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/raw/skeleton: Defining dependency "raw_skeleton"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp5_n1ka0z
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp5_n1ka0z/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp5_n1ka0z/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lIPSec_MB -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lIPSec_MB
+collect2: error: ld returned 1 exit status
+
+Library IPSec_MB found: NO
+Library IPSec_MB found: NO
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libAArch64crypto' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libAArch64crypto` -> 1
+
+Run-time dependency libaarch64crypto found: NO (tried pkgconfig)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/bcmfs: Defining dependency "crypto_bcmfs"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/caam_jr: Defining dependency "crypto_caam_jr"
+Dependency libcrypto found: YES 1.1.1 (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/ccp: Defining dependency "crypto_ccp"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/dpaa_sec: Defining dependency "crypto_dpaa_sec"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/dpaa2_sec: Defining dependency "crypto_dpaa2_sec"
+Library IPSec_MB found: NO
+Library libmusdk found: NO
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/nitrox: Defining dependency "crypto_nitrox"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/null: Defining dependency "crypto_null"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/octeontx: Defining dependency "crypto_octeontx"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/octeontx2: Defining dependency "crypto_octeontx2"
+Dependency libcrypto found: YES 1.1.1 (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/openssl: Defining dependency "crypto_openssl"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/scheduler: Defining dependency "crypto_scheduler"
+Library IPSec_MB found: NO
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/crypto/virtio: Defining dependency "crypto_virtio"
+Library IPSec_MB found: NO
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libisal' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libisal` -> 1
+
+Run-time dependency libisal found: NO (tried pkgconfig)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/compress/octeontx: Defining dependency "compress_octeontx"
+Dependency zlib found: YES 1.2.11 (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/compress/zlib: Defining dependency "compress_zlib"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Message: Disabling mlx5 [drivers/regex/mlx5]: missing internal dependency "common_mlx5"
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmpixw_fk16
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmpixw_fk16/testfile.c -o /home/cxx/dpdk/build/meson-private/tmpixw_fk16/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -llibrxp_compiler -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -llibrxp_compiler
+collect2: error: ld returned 1 exit status
+
+Library librxp_compiler found: NO
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/regex/octeontx2: Defining dependency "regex_octeontx2"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/vdpa/ifc: Defining dependency "vdpa_ifc"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Message: Disabling mlx5 [drivers/vdpa/mlx5]: missing internal dependency "common_mlx5"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/dlb: Defining dependency "event_dlb"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/dlb2: Defining dependency "event_dlb2"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/dpaa: Defining dependency "event_dpaa"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/dpaa2: Defining dependency "event_dpaa2"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/octeontx2: Defining dependency "event_octeontx2"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/opdl: Defining dependency "event_opdl"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/skeleton: Defining dependency "event_skeleton"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/sw: Defining dependency "event_sw"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-nonliteral: YES (cached)
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/dsw: Defining dependency "event_dsw"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/event/octeontx: Defining dependency "event_octeontx"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/baseband/null: Defining dependency "baseband_null"
+Library libturbo found: NO
+Library libldpc_decoder_5gnr found: NO
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/baseband/turbo_sw: Defining dependency "baseband_turbo_sw"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/baseband/fpga_lte_fec: Defining dependency "baseband_fpga_lte_fec"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/baseband/fpga_5gnr_fec: Defining dependency "baseband_fpga_5gnr_fec"
+WARNING: extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in the future.
+
+Message: drivers/baseband/acc100: Defining dependency "baseband_acc100"
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-truncation: YES (cached)
+Dependency zlib found: YES 1.2.11 (cached)
+Running command: /home/cxx/dpdk/app/test/has-hugepage.sh
+--- stdout ---
+0
+
+--- stderr ---
+
+
+Message: hugepage availability: false
+Program get-coremask.sh found: YES (/home/cxx/dpdk/app/test/get-coremask.sh)
+Running command: /home/cxx/dpdk/app/test/get-coremask.sh
+--- stdout ---
+0
+
+--- stderr ---
+
+
+Adding test "acl_autotest"
+Adding test "bitops_autotest"
+Adding test "byteorder_autotest"
+Adding test "cmdline_autotest"
+Adding test "common_autotest"
+Adding test "cpuflags_autotest"
+Adding test "cycles_autotest"
+Adding test "debug_autotest"
+Adding test "eal_fs_autotest"
+Adding test "errno_autotest"
+Adding test "ethdev_link_status"
+Adding test "event_ring_autotest"
+Adding test "fib_autotest"
+Adding test "fib6_autotest"
+Adding test "hash_autotest"
+Adding test "interrupt_autotest"
+Adding test "lcores_autotest"
+Adding test "logs_autotest"
+Adding test "lpm_autotest"
+Adding test "lpm6_autotest"
+Adding test "memcpy_autotest"
+Adding test "meter_autotest"
+Adding test "per_lcore_autotest"
+Adding test "prefetch_autotest"
+Adding test "rcu_qsbr_autotest"
+Adding test "red_autotest"
+Adding test "rib_autotest"
+Adding test "rib6_autotest"
+Adding test "ring_autotest"
+Adding test "rwlock_test1_autotest"
+Adding test "rwlock_rda_autotest"
+Adding test "rwlock_rds_wrm_autotest"
+Adding test "rwlock_rde_wro_autotest"
+Adding test "sched_autotest"
+Adding test "spinlock_autotest"
+Adding test "string_autotest"
+Adding test "table_autotest"
+Adding test "tailq_autotest"
+Adding test "user_delay_us"
+Adding test "version_autotest"
+Adding test "crc_autotest"
+Adding test "delay_us_sleep_autotest"
+Adding test "eventdev_common_autotest"
+Adding test "fbarray_autotest"
+Adding test "ipsec_autotest"
+Adding test "kvargs_autotest"
+Adding test "member_autotest"
+Adding test "metrics_autotest"
+Adding test "power_autotest"
+Adding test "reorder_autotest"
+Adding test "service_autotest"
+Adding test "thash_autotest"
+Adding test "trace_autotest"
+Adding test "telemetry_json_autotest"
+Adding test "telemetry_data_autotest"
+Adding test "ring_pmd_autotest"
+Adding test "bitratestats_autotest"
+Adding test "latencystats_autotest"
+Adding test "pdump_autotest"
+Adding test "ring_perf_autotest"
+Adding test "mempool_perf_autotest"
+Adding test "memcpy_perf_autotest"
+Adding test "hash_perf_autotest"
+Adding test "timer_perf_autotest"
+Adding test "reciprocal_division"
+Adding test "reciprocal_division_perf"
+Adding test "lpm_perf_autotest"
+Adding test "rib_slow_autotest"
+Adding test "fib_slow_autotest"
+Adding test "fib_perf_autotest"
+Adding test "red_all"
+Adding test "barrier_autotest"
+Adding test "hash_multiwriter_autotest"
+Adding test "timer_racecond_autotest"
+Adding test "efd_autotest"
+Adding test "hash_functions_autotest"
+Adding test "member_perf_autotest"
+Adding test "efd_perf_autotest"
+Adding test "lpm6_perf_autotest"
+Adding test "rib6_slow_autotest"
+Adding test "fib6_slow_autotest"
+Adding test "fib6_perf_autotest"
+Adding test "rcu_qsbr_perf_autotest"
+Adding test "red_perf"
+Adding test "distributor_perf_autotest"
+Adding test "pmd_perf_autotest"
+Adding test "stack_perf_autotest"
+Adding test "stack_lf_perf_autotest"
+Adding test "rand_perf_autotest"
+Adding test "hash_readwrite_perf_autotest"
+Adding test "hash_readwrite_lf_perf_autotest"
+Adding test "trace_perf_autotest"
+Adding test "ipsec_perf_autotest"
+Adding test "ring_pmd_perf_autotest"
+Adding test "cryptodev_aesni_mb_autotest"
+Adding test "cryptodev_aesni_gcm_autotest"
+Adding test "cryptodev_dpaa_sec_autotest"
+Adding test "cryptodev_dpaa2_sec_autotest"
+Adding test "cryptodev_null_autotest"
+Adding test "cryptodev_octeontx2_autotest"
+Adding test "cryptodev_openssl_autotest"
+Adding test "cryptodev_openssl_asym_autotest"
+Adding test "cryptodev_qat_autotest"
+Adding test "cryptodev_sw_armv8_autotest"
+Adding test "cryptodev_sw_kasumi_autotest"
+Adding test "cryptodev_sw_mvsam_autotest"
+Adding test "cryptodev_sw_snow3g_autotest"
+Adding test "cryptodev_sw_zuc_autotest"
+Adding test "eventdev_selftest_octeontx"
+Adding test "eventdev_selftest_sw"
+Adding test "rawdev_autotest"
+Adding test "link_bonding_autotest"
+Adding test "link_bonding_rssconf_autotest"
+Adding test "link_bonding_mode4_autotest"
+Adding test "cryptodev_scheduler_autotest"
+Adding test "dump_struct_sizes"
+Adding test "dump_mempool"
+Adding test "dump_malloc_stats"
+Adding test "dump_devargs"
+Adding test "dump_log_types"
+Adding test "dump_ring"
+Adding test "dump_physmem"
+Adding test "dump_memzone"
+Program doxygen found: NO
+Program sphinx-build found: NO
+Program echo found: YES (/bin/echo)
+Configuring rte_build_config.h using configuration
+Running command: /usr/bin/python3 set-static-linker-flags.py
+--- stdout ---
+Processing /home/cxx/dpdk/build/meson-uninstalled/libdpdk-libs-uninstalled.pc
+Processing /home/cxx/dpdk/build/meson-uninstalled/libdpdk-uninstalled.pc
+Processing /home/cxx/dpdk/build/meson-private/libdpdk.pc
+Processing /home/cxx/dpdk/build/meson-private/libdpdk-libs.pc
+
+--- stderr ---
+
+
+Message: 
+=================
+Libraries Enabled
+=================
+
+libs:
+	kvargs, telemetry, eal, ring, rcu, mempool, mbuf, net, 
+	meter, ethdev, pci, cmdline, metrics, hash, timer, acl, 
+	bbdev, bitratestats, cfgfile, compressdev, cryptodev, distributor, efd, eventdev, 
+	gro, gso, ip_frag, jobstats, kni, latencystats, lpm, member, 
+	power, pdump, rawdev, regexdev, rib, reorder, sched, security, 
+	stack, vhost, ipsec, fib, port, table, pipeline, flow_classify, 
+	bpf, graph, node, 
+
+Message: 
+===============
+Drivers Enabled
+===============
+
+common:
+	cpt, dpaax, iavf, octeontx, octeontx2, sfc_efx, qat, 
+bus:
+	dpaa, fslmc, ifpga, pci, vdev, vmbus, 
+mempool:
+	bucket, dpaa, dpaa2, octeontx, octeontx2, ring, stack, 
+net:
+	af_packet, ark, atlantic, avp, axgbe, bond, bnx2x, bnxt, 
+	cxgbe, dpaa, dpaa2, e1000, ena, enetc, enic, failsafe, 
+	fm10k, i40e, hinic, hns3, iavf, ice, igc, ixgbe, 
+	kni, liquidio, memif, netvsc, nfp, null, octeontx, octeontx2, 
+	pfe, qede, ring, sfc, softnic, tap, thunderx, txgbe, 
+	vdev_netvsc, vhost, virtio, vmxnet3, 
+raw:
+	dpaa2_cmdif, dpaa2_qdma, ioat, ntb, octeontx2_dma, octeontx2_ep, skeleton, 
+crypto:
+	bcmfs, caam_jr, ccp, dpaa_sec, dpaa2_sec, nitrox, null, octeontx, 
+	octeontx2, openssl, scheduler, virtio, 
+compress:
+	octeontx, zlib, 
+regex:
+	octeontx2, 
+vdpa:
+	ifc, 
+event:
+	dlb, dlb2, dpaa, dpaa2, octeontx2, opdl, skeleton, sw, 
+	dsw, octeontx, 
+baseband:
+	null, turbo_sw, fpga_lte_fec, fpga_5gnr_fec, acc100, 
+
+Message: 
+=================
+Content Skipped
+=================
+
+libs:
+	
+drivers:
+	common/mvep:	missing dependency, "libmusdk"
+	common/mlx5:	missing dependency, "mlx5"
+	net/af_xdp:	missing dependency, "libbpf"
+	net/ipn3ke:	missing dependency, "libfdt"
+	net/mlx4:	missing dependency, "mlx4"
+	net/mlx5:	missing internal dependency, "common_mlx5"
+	net/mvneta:	missing dependency, "libmusdk"
+	net/mvpp2:	missing dependency, "libmusdk"
+	net/nfb:	missing dependency, "libnfb"
+	net/pcap:	missing dependency, "libpcap"
+	net/szedata2:	missing dependency, "libsze2"
+	raw/ifpga:	missing dependency, "libfdt"
+	crypto/aesni_gcm:	missing dependency, "libIPSec_MB"
+	crypto/aesni_mb:	missing dependency, "libIPSec_MB"
+	crypto/armv8:	missing dependency, "libAArch64crypto"
+	crypto/kasumi:	missing dependency, "libIPSec_MB"
+	crypto/mvsam:	missing dependency, "libmusdk"
+	crypto/snow3g:	missing dependency, "libIPSec_MB"
+	crypto/zuc:	missing dependency, "libIPSec_MB"
+	compress/isal:	missing dependency, "libisal"
+	regex/mlx5:	missing internal dependency, "common_mlx5"
+	vdpa/mlx5:	missing internal dependency, "common_mlx5"
+	
+
+Build targets in project: 1004
+
+Found ninja-1.8.2 at /usr/bin/ninja
+Running compile:
+Working directory:  /home/cxx/dpdk/build/meson-private/tmp3551v1sf
+Command line:  ccache cc /home/cxx/dpdk/build/meson-private/tmp3551v1sf/testfile.c -o /home/cxx/dpdk/build/meson-private/tmp3551v1sf/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/7/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/7/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/7/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 

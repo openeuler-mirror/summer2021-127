@@ -1,0 +1,103 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_bus_fslmc.so.21]
+dpaa2_affine_qbman_ethrx_swp T
+dpaa2_affine_qbman_swp T
+dpaa2_alloc_dpbp_dev T
+dpaa2_alloc_dq_storage T
+dpaa2_dpbp_supported T
+dpaa2_dqrr_size B 0000000000000001
+dpaa2_eqcr_size B 0000000000000001
+dpaa2_free_dpbp_dev T
+dpaa2_free_dq_storage T
+dpaa2_free_eq_descriptors T
+dpaa2_get_mcp_ptr T
+dpaa2_io_portal B 0000000000000800
+dpaa2_seqn_dynfield_offset D 0000000000000004
+dpaa2_svr_family B 0000000000000004
+dpaa2_virt_mode B 0000000000000001
+dpbp_disable T
+dpbp_enable T
+dpbp_get_attributes T
+dpbp_get_num_free_bufs T
+dpbp_open T
+dpbp_reset T
+dpci_get_opr T
+dpci_set_opr T
+dpci_set_rx_queue T
+dpcon_get_attributes T
+dpcon_open T
+dpdmai_close T
+dpdmai_disable T
+dpdmai_enable T
+dpdmai_get_attributes T
+dpdmai_get_rx_queue T
+dpdmai_get_tx_queue T
+dpdmai_open T
+dpdmai_set_rx_queue T
+dpio_add_static_dequeue_channel T
+dpio_close T
+dpio_disable T
+dpio_enable T
+dpio_get_attributes T
+dpio_open T
+dpio_remove_static_dequeue_channel T
+dpio_reset T
+dpio_set_stashing_destination T
+EXPERIMENTAL A
+INTERNAL A
+mc_get_soc_version T
+mc_get_version T
+mc_send_command T
+per_lcore__dpaa2_io B 0000000000000010
+qbman_check_command_complete T
+qbman_check_new_result T
+qbman_eq_desc_clear T
+qbman_eq_desc_set_dca T
+qbman_eq_desc_set_fq T
+qbman_eq_desc_set_no_orp T
+qbman_eq_desc_set_orp T
+qbman_eq_desc_set_qd T
+qbman_eq_desc_set_response T
+qbman_eq_desc_set_token T
+qbman_fq_query_state T
+qbman_fq_state_frame_count T
+qbman_get_dqrr_from_idx T
+qbman_get_dqrr_idx T
+qbman_pull_desc_clear T
+qbman_pull_desc_set_fq T
+qbman_pull_desc_set_numframes T
+qbman_pull_desc_set_storage T
+qbman_release_desc_clear T
+qbman_release_desc_set_bpid T
+qbman_result_DQ_fd T
+qbman_result_DQ_flags T
+qbman_result_DQ_fqd_ctx T
+qbman_result_DQ_odpid T
+qbman_result_DQ_seqnum T
+qbman_result_eqresp_fd T
+qbman_result_eqresp_rc T
+qbman_result_eqresp_rspid T
+qbman_result_eqresp_set_rspid T
+qbman_result_has_new_result T
+qbman_result_SCN_state T
+qbman_swp_acquire T
+qbman_swp_dqrr_consume T
+qbman_swp_dqrr_idx_consume T
+qbman_swp_dqrr_next T
+qbman_swp_enqueue_multiple T
+qbman_swp_enqueue_multiple_desc T
+qbman_swp_enqueue_multiple_fd T
+qbman_swp_interrupt_clear_status T
+qbman_swp_prefetch_dqrr_next T
+qbman_swp_pull T
+qbman_swp_push_set T
+qbman_swp_release T
+rte_dpaa2_alloc_dpci_dev T
+rte_dpaa2_free_dpci_dev T
+rte_dpaa2_intr_disable T
+rte_dpaa2_intr_enable T
+rte_fslmc_driver_register T
+rte_fslmc_driver_unregister T
+rte_fslmc_get_device_count T
+rte_fslmc_object_register T
+rte_fslmc_vfio_mem_dmamap T
+rte_global_active_dqs_list B 0000000000001000

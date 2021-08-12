@@ -1,0 +1,24 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_sched.so.21]
+DPDK_21 A
+EXPERIMENTAL A
+rte_approx T
+rte_red_config_init T
+rte_red_log2_1_minus_Wq B 0000000000000018
+rte_red_pow2_frac_inv B 0000000000000020
+rte_red_rand_seed B 0000000000000004
+rte_red_rand_val B 0000000000000004
+rte_red_rt_data_init T
+rte_sched_pipe_config T
+rte_sched_port_config T
+rte_sched_port_dequeue T
+rte_sched_port_enqueue T
+rte_sched_port_free T
+rte_sched_port_get_memory_footprint T
+rte_sched_port_pkt_read_color T
+rte_sched_port_pkt_read_tree_path T
+rte_sched_port_pkt_write T
+rte_sched_port_subport_profile_add T
+rte_sched_queue_read_stats T
+rte_sched_subport_config T
+rte_sched_subport_pipe_profile_add T
+rte_sched_subport_read_stats T

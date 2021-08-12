@@ -1,0 +1,376 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_eal.so.21]
+DPDK_21 A
+eal_parse_sysfs_value T
+eal_timer_source D 0000000000000004
+EXPERIMENTAL A
+INTERNAL A
+per_lcore__lcore_id D 0000000000000004
+per_lcore__rte_errno B 0000000000000004
+per_lcore__thread_id D 0000000000000004
+per_lcore_trace_mem B 0000000000000008
+per_lcore_trace_point_sz B 0000000000000004
+rte_bus_dump T
+rte_bus_find T
+rte_bus_find_by_device T
+rte_bus_find_by_name T
+rte_bus_get_iommu_class T
+rte_bus_probe T
+rte_bus_register T
+rte_bus_scan T
+rte_bus_unregister T
+rte_calloc T
+rte_calloc_socket T
+rte_class_find T
+rte_class_find_by_name T
+rte_class_register T
+rte_class_unregister T
+rte_cpu_get_flag_enabled T
+rte_cpu_get_flag_name T
+rte_cpu_get_intrinsics_support T
+rte_cpu_is_supported T
+rte_ctrl_thread_create T
+rte_cycles_vmware_tsc_map B 0000000000000004
+rte_delay_us B 0000000000000008
+rte_delay_us_block T
+rte_delay_us_callback_register T
+rte_delay_us_sleep T
+rte_devargs_add T
+rte_devargs_dump T
+rte_devargs_insert T
+rte_devargs_next T
+rte_devargs_parse T
+rte_devargs_parsef T
+rte_devargs_remove T
+rte_devargs_type_count T
+rte_dev_dma_map T
+rte_dev_dma_unmap T
+rte_dev_event_callback_process T
+rte_dev_event_callback_register T
+rte_dev_event_callback_unregister T
+rte_dev_event_monitor_start T
+rte_dev_event_monitor_stop T
+rte_dev_hotplug_handle_disable T
+rte_dev_hotplug_handle_enable T
+rte_dev_is_probed T
+rte_dev_iterator_init T
+rte_dev_iterator_next T
+rte_dev_probe T
+rte_dev_remove T
+rte_dump_physmem_layout T
+rte_dump_stack T
+rte_dump_tailq T
+rte_eal_alarm_cancel T
+rte_eal_alarm_set T
+rte_eal_cleanup T
+rte_eal_create_uio_dev T
+rte_eal_get_lcore_state T
+rte_eal_get_physmem_size T
+rte_eal_get_runtime_dir T
+rte_eal_has_hugepages T
+rte_eal_has_pci T
+rte_eal_hotplug_add T
+rte_eal_hotplug_remove T
+rte_eal_init T
+rte_eal_iopl_init T
+rte_eal_iova_mode T
+rte_eal_lcore_role T
+rte_eal_mbuf_user_pool_ops T
+rte_eal_mp_remote_launch T
+rte_eal_mp_wait_lcore T
+rte_eal_primary_proc_alive T
+rte_eal_process_type T
+rte_eal_remote_launch T
+rte_eal_tailq_lookup T
+rte_eal_tailq_register T
+__rte_eal_trace_alarm_cancel D 0000000000000008
+__rte_eal_trace_alarm_set D 0000000000000008
+__rte_eal_trace_generic_double D 0000000000000008
+__rte_eal_trace_generic_float D 0000000000000008
+__rte_eal_trace_generic_func D 0000000000000008
+__rte_eal_trace_generic_i16 D 0000000000000008
+__rte_eal_trace_generic_i32 D 0000000000000008
+__rte_eal_trace_generic_i64 D 0000000000000008
+__rte_eal_trace_generic_i8 D 0000000000000008
+__rte_eal_trace_generic_int D 0000000000000008
+__rte_eal_trace_generic_long D 0000000000000008
+__rte_eal_trace_generic_ptr D 0000000000000008
+__rte_eal_trace_generic_size_t D 0000000000000008
+__rte_eal_trace_generic_str D 0000000000000008
+__rte_eal_trace_generic_u16 D 0000000000000008
+__rte_eal_trace_generic_u32 D 0000000000000008
+__rte_eal_trace_generic_u64 D 0000000000000008
+__rte_eal_trace_generic_u8 D 0000000000000008
+__rte_eal_trace_generic_void D 0000000000000008
+__rte_eal_trace_intr_callback_register D 0000000000000008
+__rte_eal_trace_intr_callback_unregister D 0000000000000008
+__rte_eal_trace_intr_disable D 0000000000000008
+__rte_eal_trace_intr_enable D 0000000000000008
+__rte_eal_trace_mem_free D 0000000000000008
+__rte_eal_trace_mem_malloc D 0000000000000008
+__rte_eal_trace_mem_realloc D 0000000000000008
+__rte_eal_trace_mem_zmalloc D 0000000000000008
+__rte_eal_trace_memzone_free D 0000000000000008
+__rte_eal_trace_memzone_lookup D 0000000000000008
+__rte_eal_trace_memzone_reserve D 0000000000000008
+__rte_eal_trace_thread_lcore_ready D 0000000000000008
+__rte_eal_trace_thread_remote_launch D 0000000000000008
+rte_eal_using_phys_addrs T
+rte_eal_vfio_get_vf_token T
+rte_eal_vfio_intr_mode T
+rte_eal_wait_lcore T
+rte_epoll_ctl T
+rte_epoll_wait T
+rte_epoll_wait_interruptible T
+rte_exit T
+rte_extmem_attach T
+rte_extmem_detach T
+rte_extmem_register T
+rte_extmem_unregister T
+rte_fbarray_attach T
+rte_fbarray_destroy T
+rte_fbarray_detach T
+rte_fbarray_dump_metadata T
+rte_fbarray_find_biggest_free T
+rte_fbarray_find_biggest_used T
+rte_fbarray_find_contig_free T
+rte_fbarray_find_contig_used T
+rte_fbarray_find_idx T
+rte_fbarray_find_next_free T
+rte_fbarray_find_next_n_free T
+rte_fbarray_find_next_n_used T
+rte_fbarray_find_next_used T
+rte_fbarray_find_prev_free T
+rte_fbarray_find_prev_n_free T
+rte_fbarray_find_prev_n_used T
+rte_fbarray_find_prev_used T
+rte_fbarray_find_rev_biggest_free T
+rte_fbarray_find_rev_biggest_used T
+rte_fbarray_find_rev_contig_free T
+rte_fbarray_find_rev_contig_used T
+rte_fbarray_get T
+rte_fbarray_init T
+rte_fbarray_is_used T
+rte_fbarray_set_free T
+rte_fbarray_set_used T
+rte_free T
+rte_get_main_lcore T
+rte_get_next_lcore T
+rte_get_tsc_hz T
+rte_hexdump T
+rte_hypervisor_get T
+rte_hypervisor_get_name T
+rte_intr_ack T
+rte_intr_allow_others T
+rte_intr_callback_register T
+rte_intr_callback_unregister T
+rte_intr_callback_unregister_pending T
+rte_intr_cap_multiple T
+rte_intr_disable T
+rte_intr_dp_is_en T
+rte_intr_efd_disable T
+rte_intr_efd_enable T
+rte_intr_enable T
+rte_intr_free_epoll_fd T
+rte_intr_rx_ctl T
+rte_intr_tls_epfd T
+rte_keepalive_create T
+rte_keepalive_dispatch_pings T
+rte_keepalive_mark_alive T
+rte_keepalive_mark_sleep T
+rte_keepalive_register_core T
+rte_keepalive_register_relay_callback T
+rte_lcore_callback_register T
+rte_lcore_callback_unregister T
+rte_lcore_count T
+rte_lcore_cpuset T
+rte_lcore_dump T
+rte_lcore_has_role T
+rte_lcore_index T
+rte_lcore_is_enabled T
+rte_lcore_iterate T
+rte_lcore_to_cpu_id T
+rte_lcore_to_socket_id T
+rte_log T
+rte_log_can_log T
+rte_log_cur_msg_loglevel T
+rte_log_cur_msg_logtype T
+rte_log_dump T
+rte_log_get_global_level T
+rte_log_get_level T
+rte_log_get_stream T
+rte_log_register T
+rte_log_register_type_and_pick_level T
+rte_log_set_global_level T
+rte_log_set_level T
+rte_log_set_level_pattern T
+rte_log_set_level_regexp T
+rte_malloc T
+rte_malloc_dump_heaps T
+rte_malloc_dump_stats T
+rte_malloc_get_socket_stats T
+rte_malloc_heap_create T
+rte_malloc_heap_destroy T
+rte_malloc_heap_get_socket T
+rte_malloc_heap_memory_add T
+rte_malloc_heap_memory_attach T
+rte_malloc_heap_memory_detach T
+rte_malloc_heap_memory_remove T
+rte_malloc_heap_socket_is_external T
+rte_malloc_set_limit T
+rte_malloc_socket T
+rte_malloc_validate T
+rte_malloc_virt2iova T
+rte_mcfg_get_single_file_segments T
+rte_mcfg_mempool_read_lock T
+rte_mcfg_mempool_read_unlock T
+rte_mcfg_mempool_write_lock T
+rte_mcfg_mempool_write_unlock T
+rte_mcfg_mem_read_lock T
+rte_mcfg_mem_read_unlock T
+rte_mcfg_mem_write_lock T
+rte_mcfg_mem_write_unlock T
+rte_mcfg_tailq_read_lock T
+rte_mcfg_tailq_read_unlock T
+rte_mcfg_tailq_write_lock T
+rte_mcfg_tailq_write_unlock T
+rte_mcfg_timer_lock T
+rte_mcfg_timer_unlock T
+rte_mem_alloc_validator_register T
+rte_mem_alloc_validator_unregister T
+rte_mem_check_dma_mask T
+rte_mem_check_dma_mask_thread_unsafe T
+rte_memdump T
+rte_mem_event_callback_register T
+rte_mem_event_callback_unregister T
+rte_mem_iova2virt T
+rte_mem_lock T
+rte_mem_lock_page T
+rte_mem_map T
+rte_memory_get_nchannel T
+rte_memory_get_nrank T
+rte_mem_page_size T
+rte_memseg_contig_walk T
+rte_memseg_contig_walk_thread_unsafe T
+rte_memseg_get_fd T
+rte_memseg_get_fd_offset T
+rte_memseg_get_fd_offset_thread_unsafe T
+rte_memseg_get_fd_thread_unsafe T
+rte_memseg_list_walk T
+rte_memseg_list_walk_thread_unsafe T
+rte_memseg_walk T
+rte_memseg_walk_thread_unsafe T
+rte_mem_set_dma_mask T
+rte_mem_unmap T
+rte_mem_virt2iova T
+rte_mem_virt2memseg T
+rte_mem_virt2memseg_list T
+rte_mem_virt2phy T
+rte_memzone_dump T
+rte_memzone_free T
+rte_memzone_lookup T
+rte_memzone_reserve T
+rte_memzone_reserve_aligned T
+rte_memzone_reserve_bounded T
+rte_memzone_walk T
+rte_mp_action_register T
+rte_mp_action_unregister T
+rte_mp_disable T
+rte_mp_reply T
+rte_mp_request_async T
+rte_mp_request_sync T
+rte_mp_sendmsg T
+rte_openlog_stream T
+__rte_panic T
+rte_rand T
+rte_rand_max T
+rte_realloc T
+rte_realloc_socket T
+rte_reciprocal_value T
+rte_reciprocal_value_u64 T
+rte_rtm_supported B 0000000000000001
+rte_service_attr_get T
+rte_service_attr_reset_all T
+rte_service_component_register T
+rte_service_component_runstate_set T
+rte_service_component_unregister T
+rte_service_dump T
+rte_service_finalize T
+rte_service_get_by_name T
+rte_service_get_count T
+rte_service_get_name T
+rte_service_lcore_add T
+rte_service_lcore_attr_get T
+rte_service_lcore_attr_reset_all T
+rte_service_lcore_count T
+rte_service_lcore_count_services T
+rte_service_lcore_del T
+rte_service_lcore_list T
+rte_service_lcore_may_be_active T
+rte_service_lcore_reset_all T
+rte_service_lcore_start T
+rte_service_lcore_stop T
+rte_service_map_lcore_get T
+rte_service_map_lcore_set T
+rte_service_may_be_active T
+rte_service_probe_capability T
+rte_service_run_iter_on_app_lcore T
+rte_service_runstate_get T
+rte_service_runstate_set T
+rte_service_set_runstate_mapped_check T
+rte_service_set_stats_enable T
+rte_service_start_with_defaults T
+rte_set_application_usage_hook T
+rte_socket_count T
+rte_socket_id T
+rte_socket_id_by_idx T
+rte_srand T
+rte_strerror T
+rte_strscpy T
+rte_strsplit T
+rte_sys_gettid T
+rte_thread_get_affinity T
+rte_thread_getname T
+rte_thread_is_intr T
+rte_thread_register T
+rte_thread_set_affinity T
+rte_thread_setname T
+rte_thread_unregister T
+rte_trace_dump T
+rte_trace_is_enabled T
+__rte_trace_mem_per_thread_alloc T
+rte_trace_metadata_dump T
+rte_trace_mode_get T
+rte_trace_mode_set T
+rte_trace_pattern T
+rte_trace_point_disable T
+__rte_trace_point_emit_field T
+rte_trace_point_enable T
+rte_trace_point_is_enabled T
+rte_trace_point_lookup T
+__rte_trace_point_register T
+rte_trace_regexp T
+rte_trace_save T
+rte_uuid_compare T
+rte_uuid_is_null T
+rte_uuid_parse T
+rte_uuid_unparse T
+rte_vect_get_max_simd_bitwidth T
+rte_vect_set_max_simd_bitwidth T
+rte_vfio_clear_group T
+rte_vfio_container_create T
+rte_vfio_container_destroy T
+rte_vfio_container_dma_map T
+rte_vfio_container_dma_unmap T
+rte_vfio_container_group_bind T
+rte_vfio_container_group_unbind T
+rte_vfio_enable T
+rte_vfio_get_container_fd T
+rte_vfio_get_group_fd T
+rte_vfio_get_group_num T
+rte_vfio_is_enabled T
+rte_vfio_noiommu_is_enabled T
+rte_vfio_release_device T
+rte_vfio_setup_device T
+rte_vlog T
+rte_zmalloc T
+rte_zmalloc_socket T

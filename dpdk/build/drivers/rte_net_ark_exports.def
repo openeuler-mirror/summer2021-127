@@ -1,0 +1,3 @@
+EXPORTS
+	rte_pmd_ark_rx_userdata_dynfield_offset
+	rte_pmd_ark_tx_userdata_dynfield_offset

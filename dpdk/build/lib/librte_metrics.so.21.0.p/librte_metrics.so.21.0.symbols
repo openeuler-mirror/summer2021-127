@@ -1,0 +1,11 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_metrics.so.21]
+DPDK_21 A
+EXPERIMENTAL A
+rte_metrics_deinit T
+rte_metrics_get_names T
+rte_metrics_get_values T
+rte_metrics_init T
+rte_metrics_reg_name T
+rte_metrics_reg_names T
+rte_metrics_update_value T
+rte_metrics_update_values T

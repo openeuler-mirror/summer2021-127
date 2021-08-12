@@ -1,0 +1,3 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_gso.so.21]
+DPDK_21 A
+rte_gso_segment T

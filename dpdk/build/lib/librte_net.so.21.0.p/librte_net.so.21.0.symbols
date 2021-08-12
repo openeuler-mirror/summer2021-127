@@ -1,0 +1,11 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_net.so.21]
+DPDK_21 A
+EXPERIMENTAL A
+rte_ether_format_addr T
+rte_ether_unformat_addr T
+rte_eth_random_addr T
+rte_net_crc_calc T
+rte_net_crc_set_alg T
+rte_net_get_ptype T
+rte_net_make_rarp_packet T
+rte_net_skip_ip6_ext T

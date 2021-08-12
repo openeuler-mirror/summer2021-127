@@ -1,0 +1,15 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_acl.so.21]
+DPDK_21 A
+rte_acl_add_rules T
+rte_acl_build T
+rte_acl_classify T
+rte_acl_classify_alg T
+rte_acl_classify_scalar T
+rte_acl_create T
+rte_acl_dump T
+rte_acl_find_existing T
+rte_acl_free T
+rte_acl_list_dump T
+rte_acl_reset T
+rte_acl_reset_rules T
+rte_acl_set_ctx_classify T

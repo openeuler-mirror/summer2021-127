@@ -1,0 +1,19 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_table.so.21]
+DPDK_21 A
+EXPERIMENTAL A
+rte_swx_table_exact_match_ops D 0000000000000038
+rte_swx_table_exact_match_unoptimized_ops D 0000000000000038
+rte_table_acl_ops D 0000000000000040
+rte_table_array_ops D 0000000000000040
+rte_table_hash_cuckoo_ops D 0000000000000040
+rte_table_hash_ext_ops D 0000000000000040
+rte_table_hash_key16_ext_ops D 0000000000000040
+rte_table_hash_key16_lru_ops D 0000000000000040
+rte_table_hash_key32_ext_ops D 0000000000000040
+rte_table_hash_key32_lru_ops D 0000000000000040
+rte_table_hash_key8_ext_ops D 0000000000000040
+rte_table_hash_key8_lru_ops D 0000000000000040
+rte_table_hash_lru_ops D 0000000000000040
+rte_table_lpm_ipv6_ops D 0000000000000040
+rte_table_lpm_ops D 0000000000000040
+rte_table_stub_ops D 0000000000000040

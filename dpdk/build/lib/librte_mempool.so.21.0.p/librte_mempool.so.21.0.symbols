@@ -1,0 +1,57 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_mempool.so.21]
+DPDK_21 A
+EXPERIMENTAL A
+rte_mempool_audit T
+rte_mempool_avail_count T
+rte_mempool_cache_create T
+rte_mempool_cache_free T
+rte_mempool_calc_obj_size T
+rte_mempool_check_cookies T
+rte_mempool_contig_blocks_check_cookies T
+rte_mempool_create T
+rte_mempool_create_empty T
+rte_mempool_dump T
+rte_mempool_free T
+rte_mempool_get_page_size T
+rte_mempool_in_use_count T
+rte_mempool_list_dump T
+rte_mempool_lookup T
+rte_mempool_mem_iter T
+rte_mempool_obj_iter T
+rte_mempool_op_calc_mem_size_default T
+rte_mempool_op_calc_mem_size_helper T
+rte_mempool_op_populate_default T
+rte_mempool_op_populate_helper T
+rte_mempool_ops_get_info T
+rte_mempool_ops_table B 0000000000000840
+rte_mempool_populate_anon T
+rte_mempool_populate_default T
+rte_mempool_populate_iova T
+rte_mempool_populate_virt T
+rte_mempool_register_ops T
+rte_mempool_set_ops_byname T
+__rte_mempool_trace_cache_create D 0000000000000008
+__rte_mempool_trace_cache_flush D 0000000000000008
+__rte_mempool_trace_cache_free D 0000000000000008
+__rte_mempool_trace_create D 0000000000000008
+__rte_mempool_trace_create_empty D 0000000000000008
+__rte_mempool_trace_default_cache D 0000000000000008
+__rte_mempool_trace_free D 0000000000000008
+__rte_mempool_trace_generic_get D 0000000000000008
+__rte_mempool_trace_generic_put D 0000000000000008
+__rte_mempool_trace_get_bulk D 0000000000000008
+__rte_mempool_trace_get_contig_blocks D 0000000000000008
+__rte_mempool_trace_get_page_size D 0000000000000008
+__rte_mempool_trace_ops_alloc D 0000000000000008
+__rte_mempool_trace_ops_dequeue_bulk D 0000000000000008
+__rte_mempool_trace_ops_dequeue_contig_blocks D 0000000000000008
+__rte_mempool_trace_ops_enqueue_bulk D 0000000000000008
+__rte_mempool_trace_ops_free D 0000000000000008
+__rte_mempool_trace_ops_populate D 0000000000000008
+__rte_mempool_trace_populate_anon D 0000000000000008
+__rte_mempool_trace_populate_default D 0000000000000008
+__rte_mempool_trace_populate_iova D 0000000000000008
+__rte_mempool_trace_populate_virt D 0000000000000008
+__rte_mempool_trace_put_bulk D 0000000000000008
+__rte_mempool_trace_set_ops_byname D 0000000000000008
+rte_mempool_walk T

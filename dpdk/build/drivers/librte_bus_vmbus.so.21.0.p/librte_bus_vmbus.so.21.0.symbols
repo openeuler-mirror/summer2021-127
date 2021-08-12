@@ -1,0 +1,24 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_bus_vmbus.so.21]
+DPDK_21 A
+rte_vmbus_chan_close T
+rte_vmbus_chan_open T
+rte_vmbus_chan_recv T
+rte_vmbus_chan_recv_raw T
+rte_vmbus_chan_rx_empty T
+rte_vmbus_chan_send T
+rte_vmbus_chan_send_sglist T
+rte_vmbus_chan_signal_read T
+rte_vmbus_chan_signal_tx T
+rte_vmbus_irq_mask T
+rte_vmbus_irq_read T
+rte_vmbus_irq_unmask T
+rte_vmbus_map_device T
+rte_vmbus_max_channels T
+rte_vmbus_probe T
+rte_vmbus_register T
+rte_vmbus_scan T
+rte_vmbus_set_latency T
+rte_vmbus_sub_channel_index T
+rte_vmbus_subchan_open T
+rte_vmbus_unmap_device T
+rte_vmbus_unregister T

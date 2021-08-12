@@ -1,0 +1,6 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_crypto_octeontx2.so.21]
+DPDK_21 A
+INTERNAL A
+otx2_cpt_af_reg_read T
+otx2_cpt_af_reg_write T
+otx2_cryptodev_driver_id B 0000000000000001

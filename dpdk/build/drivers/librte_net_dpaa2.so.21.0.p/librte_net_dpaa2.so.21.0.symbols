@@ -1,0 +1,7 @@
+ 0x000000000000000e (SONAME)             Library soname: [librte_net_dpaa2.so.21]
+dpaa2_eth_eventq_attach T
+dpaa2_eth_eventq_detach T
+EXPERIMENTAL A
+INTERNAL A
+rte_pmd_dpaa2_mux_flow_create T
+rte_pmd_dpaa2_set_custom_hash T
