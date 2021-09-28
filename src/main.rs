@@ -2,8 +2,8 @@ mod rust_bindings;
 use crate::rust_bindings::*;
 use std::env;
 use std::convert::TryInto;
-fn lcore_hello(input:i32)->i32{
-	let lcore_id = unsafe {rte_lcore_id()};
+fn lcore_hello(_input:i32)->i32{
+	let lcore_id = 0;
 	println!("hello from core {}", lcore_id);
 	return 0;
 }
@@ -13,11 +13,12 @@ fn main() {
 	//argv为一个字符串集合和C语言中对应的char **argv含义相同
 	let argv: Vec<String> = env::args().collect();
 	//argc代表字符串集合的长度和C语言中对应的int argc含义相同
-	let argc :u32= argv.len().try_into().unwrap();
-	let ret = unsafe {rte_eal_init(argc, argv)};
+	//let argc :u32= argv.len().try_into().unwrap();
+	let ret = rte_eal_init_safe(argv);
     //failed to init
-	if (ret < 0){
+	if ret < 0 {
 		println!("Cannot init EAL!");
+		return;
     }
 	/* call lcore_hello() on every worker lcore */
 	/*for (lcore_id = unsafe {rte_get_next_lcore(-1, 1, 0)};
@@ -26,11 +27,11 @@ fn main() {
 		unsafe {rte_eal_remote_launch(lcore_hello, 1, lcore_id)};
 	}*/
     //change to while
-	let RTE_MAX_LCORE =128;
+	let rte_max_lcore =128;
 	type LcoreFunctionT = fn(i32)->i32;
 	let func: LcoreFunctionT = lcore_hello;
     let mut lcore_id = unsafe{rte_get_next_lcore(-1,1,0)};
-    while lcore_id < RTE_MAX_LCORE{
+    while lcore_id < rte_max_lcore{
         
         unsafe {rte_eal_remote_launch(func, 1, lcore_id)};
 		lcore_id = unsafe{rte_get_next_lcore(lcore_id,1,0)};
