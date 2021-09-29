@@ -34,6 +34,7 @@ ifconfig
 sudo dpdk-devbind.py --bind=net_cd
 //check the bindings
 sudo dpdk-devbind.py --status
+```
 
 sudo cargo run即可运行封装测试程序（注：必须要在sudo模式下运行，不然无法访问内存大页）
 
