@@ -48,5 +48,5 @@ sudo cargo run
 3.  Commit your code
 4.  Create Pull Request
 
-
+in details：https://github.com/cxxuser/rust_dpdk
 
